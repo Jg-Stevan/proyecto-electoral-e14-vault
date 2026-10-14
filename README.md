@@ -78,7 +78,7 @@ Proyecto privado de uso interno. El contenido de este vault es documentación de
 ---
 
 *Última actualización: 2026-10-13*
--e 
+
 ## Fuentes
 - Fuente de verdad por-aplicación: `apps/digitalizador-e14/docs/` (DECISIONS, ROADMAP, SPECs, design).
 

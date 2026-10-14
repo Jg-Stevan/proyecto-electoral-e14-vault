@@ -93,7 +93,7 @@ Ubicadas en la columna final de la tabla:
     
       
     
-- **Paginador Inferior:** Control de navegación para la bandeja (`Mostrando 1 - 3 de 8 anomalías`).-e 
+- **Paginador Inferior:** Control de navegación para la bandeja (`Mostrando 1 - 3 de 8 anomalías`).
 ## Puente con la PWA (post-Stitch)
 - Modal de Auditoría ← historial de intentos, rechazos ILEGIBLE/GENERICO/INCOMPLETA/BAJO, score y bandas.
 - Centro de Notificaciones (SLA) ← marcas de tiempo de `EN_REVISION_HUMANA`.

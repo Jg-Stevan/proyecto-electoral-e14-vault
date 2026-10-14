@@ -138,7 +138,7 @@ Mantiene la estructura modular del sistema visible a la izquierda:
       
     
 
--e 
+
 ## Puente con la PWA (post-Stitch)
 - Modal de Auditoría ← historial de intentos, rechazos ILEGIBLE/GENERICO/INCOMPLETA/BAJO, score y bandas.
 - Centro de Notificaciones (SLA) ← marcas de tiempo de `EN_REVISION_HUMANA`.

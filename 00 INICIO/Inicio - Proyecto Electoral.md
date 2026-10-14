@@ -40,7 +40,6 @@ tags: [moc, inicio]
 | `07 DIARIO` | Notas diarias: decisiones del día, avances, dudas | Rutina diaria |
 | `08 PLANTILLAS` | Plantillas reutilizables | Al crear notas repetitivas |
 | `09 INGENIERÍA Y AGENTES` | El desarrollo real: motor de captura, lógica de aprobación, agentes, PRs y backlog | Para **construir o entender el código** |
-| `99 REVISAR - candidatos a eliminar` | Material dudoso u obsoleto en cuarentena | Solo cuando quieras **limpiar** |
 
 ---
 

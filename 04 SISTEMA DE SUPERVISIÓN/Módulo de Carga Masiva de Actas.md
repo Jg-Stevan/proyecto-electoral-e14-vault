@@ -98,7 +98,7 @@ Ubicada en el pie de página del sistema para el control final del lote:
 - **Botón de Integración Final:** **`INTEGRAR AL MONITOR GLOBAL`** (en verde destacado), habilitado para volcar los registros procesados y validados directamente en el sistema general de supervisión electoral.
 
 
--e 
+
 ## Puente con la PWA (post-Stitch)
 - Modal de Auditoría ← historial de intentos, rechazos ILEGIBLE/GENERICO/INCOMPLETA/BAJO, score y bandas.
 - Centro de Notificaciones (SLA) ← marcas de tiempo de `EN_REVISION_HUMANA`.

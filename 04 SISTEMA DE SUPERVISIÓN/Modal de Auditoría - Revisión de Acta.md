@@ -111,7 +111,7 @@ Muestra la cronología detallada de eventos de la mesa en tiempo real:
       
     
 
--e 
+
 ## Puente con la PWA (post-Stitch)
 - Modal de Auditoría ← historial de intentos, rechazos ILEGIBLE/GENERICO/INCOMPLETA/BAJO, score y bandas.
 - Centro de Notificaciones (SLA) ← marcas de tiempo de `EN_REVISION_HUMANA`.
