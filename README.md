@@ -1,3 +1,4 @@
+> Si eres un agente de IA, empieza por [`AGENTS.md`](./AGENTS.md).
 # 🧠 Proyecto Electoral E-14 — Cerebro Digital
 
 > **Vault de Obsidian** para la digitalización, transmisión y auditoría de actas **E-14** en consulados del exterior (Presidenciales 2026, segunda vuelta).
