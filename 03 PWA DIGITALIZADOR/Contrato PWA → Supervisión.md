@@ -21,6 +21,7 @@ tags: [pwa, supervision, contrato, integracion]
 ## §3 Reglas de la interfaz
 - "La geometría sospecha, la tinta condena": el panel no recalifica por imagen, solo por contenido y anomalías formales.
 -  `EN_REVISION_HUMANA` por intento 4 es contingencia esperada (conteo EN_REVISION_HUMANA activado).
+- Referencia secundaria de EN_REVISION_HUMANA para auditoría.
 - ADVERTENCIA viaja con marca de revisión para auditoría posterior.
 - Feedback en UI persistente (sin modales).
 
