@@ -1,13 +1,14 @@
-> ⚠️ OBSOLETO desde el rediseño Stitch (PR #50, 2026-10-14). La UI vigente está descrita en [[Flujo de captura (post-Stitch)]]. Se conserva solo como referencia histórica.
 
 ---
 proyecto: Proyecto Electoral E-14
 tipo: producto
-estado: vigente
+estado: obsoleto
 actualizado: 2026-10-13
 tags: [e14, pwa, ui]
 ---
 ## **Pantalla principal de captura/escaneo**
+> ⚠️ OBSOLETO desde el rediseño Stitch (PR #50, 2026-10-14). La UI vigente está descrita en [[Flujo de captura (post-Stitch)]]. Se conserva solo como referencia histórica.
+
 
 Esta interfaz corresponde a la **pantalla principal de captura/escaneo** de la aplicación PWA para el digitalizador del formulario E-14. Está diseñada para servir como el punto de entrada operativo donde el usuario realiza el encuadre y procesamiento inicial del documento físico.
 

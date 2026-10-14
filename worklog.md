@@ -25,7 +25,6 @@ Work Log:
 
 Stage Summary:
 - Vault con capa agent-readiness completa. Siguiente: TASK-002 (sincronizar el estado del repo web-scanner).
--e 
 ## Continuidad (2026-10-14)
 - Auditoría PR docs/sincronizacion-stitch: aplicada corrección según feedback.
 - TASK-002 absorbida por TASK-006.

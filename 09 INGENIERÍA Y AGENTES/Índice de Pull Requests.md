@@ -49,7 +49,6 @@ tags: [ingenieria, pull-requests, indice, git]
 
 | PR | Tema | Estado | Acción |
 |---|---|---|---|
-| **#47** | Revert del guard-borde | 🔴 Abierto — **riesgo mayor** | **Cerrar (30 s)** + limpiar rama `revert-44` |
 
 > Ver [[Backlog y decisiones pendientes]] B-1.
 
@@ -85,7 +84,6 @@ El burst pasó por 5 versiones; cada una costó un PR y una auditoría:
 
 ## 8. Mapa de dependencias
 *Cadena #48→#49→#50→#51/#52 completada.*
-   #47 (cerrar)  ──────────────────────────> limpia revert-44
         │
         ▼
    #39 (merge)  ┐

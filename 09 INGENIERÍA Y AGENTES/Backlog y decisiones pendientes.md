@@ -15,28 +15,6 @@ tags: [ingenieria, backlog, decisiones, pendientes]
 
 ## 🔴 Bloqueantes (no se puede avanzar sin resolverlos)
 
-### B-1 · Cerrar el PR #47 (revert del guard-borde)
-- **Qué:** el revert del guard de borde está abierto y es el **riesgo mayor**.
-- **Esfuerzo:** 30 segundos (cerrar + limpiar rama `revert-44`).
-- **Detalle:** ver [[Tablero de próximos pasos]] y [[Guard de completitud (borde)]].
-
-### B-2 · Merge de PR #39 (burst) y PR #43 (F2)
-- **Qué:** ambos **aprobados**, esperando merge.
-- **Desbloquea:** el **LOTE 2** (preview escalonado 2048→4032).
-- **Ver:** [[Cámara, autocaptura y burst]] y [[Memoria, render y tiers]] §6.
-
-### B-3 · Orden de integración
-- **Opciones:** `v12b → rebase v13 → re-auditoría`.
-- **Decisión pendiente:** definir la secuencia de rebases.
-
-### B-4 · Rebasar el rediseño Stitch sobre `main`
-- **Qué:** el rediseño Stitch es el sistema visual vigente, pero necesita rebase sobre `main` con **auditoría E2E**.
-- **Dependencia:** notificaciones persistentes (ver [[Estados, intentos y contingencias]] §7).
-
----
-
-## 🟠 Decisiones de producto abiertas
-
 ### D-1 · El estado `ADVERTENCIA` quedó muerto
 - **El problema:** al subir `PISO_IDENTIFICADA` a 10, toda captura identificada da **10.0 → ÓPTIMA → auto-enviada**. La banda media (`6.5-7.9`) **solo existe en simulación**.
 - **Opciones:**
@@ -103,19 +81,6 @@ tags: [ingenieria, backlog, decisiones, pendientes]
 
 ## 🔵 Desarrollo (trabajo de código)
 ### DEV-8 · Crear README.md en `apps/digitalizador-e14`
-
-### DEV-1 · Cerrar PR #47 y limpiar `revert-44`
-- (ver B-1)
-
-### DEV-2 · Mergear #39 y #43 → desbloquea LOTE 2
-- (ver B-2)
-
-### DEV-3 · Implementar el LOTE 2 (preview escalonado 2048→4032)
-- Especificación entregada (`F2-E`).
-- `PREVIEW_FAST_LONG_SIDE = 2048` + upgrade en background con `cacheKey` condicional.
-- Cancelación obligatoria si se desmonta / cambia `cacheKey` / la cámara dispara.
-- Invariante: con `maxLongSide = 4032`, byte a byte el de hoy.
-- **Ver:** [[Memoria, render y tiers]] §6.
 
 ### DEV-4 · Resolver los 35 commits `v13-post-N` fuera de alcance
 - QA físico o descartar.

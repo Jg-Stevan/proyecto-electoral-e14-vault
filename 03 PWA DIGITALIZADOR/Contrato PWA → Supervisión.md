@@ -20,7 +20,7 @@ tags: [pwa, supervision, contrato, integracion]
 
 ## §3 Reglas de la interfaz
 - "La geometría sospecha, la tinta condena": el panel no recalifica por imagen, solo por contenido y anomalías formales.
--  por intento 4 es contingencia esperada.
+-  `EN_REVISION_HUMANA` por intento 4 es contingencia esperada.
 - ADVERTENCIA viaja con marca de revisión para auditoría posterior.
 - Feedback en UI persistente (sin modales).
 
