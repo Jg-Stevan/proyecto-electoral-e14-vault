@@ -25,50 +25,29 @@ tags: [ingenieria, repositorio, estado, git]
 
 ---
 
-## 2. Ramas relevantes
+## 2. Ramas
+- `main`: Rama vigente, integra el rediseño Stitch (HEAD `b8cfb01`).
 
-| Rama | Qué contiene | Estado |
-|---|---|---|
-| `main` | La base estable | ✅ Vigente (con rediseño Stitch por integrar) |
-| `qa-v11` / `qa-v12` / `qa-v12b` | Versiones de QA con URLs estables de Vercel | 🟡 Por recrear |
-| `revert-44` | El revert del guard-borde (PR #47) | 🔴 **Por cerrar/limpiar** |
-| `v13-post-N` (35 commits) | Fuera de alcance | 🟡 QA físico o descartar |
-
-> ⚠️ Las ramas `qa-*` se quieren recrear para tener URLs estables de Vercel y comparar versiones en el iPhone real (ver [[Backlog y decisiones pendientes]] DEV-6).
-
----
-
-## 3. Pull Requests (mapa de alto nivel)
-
+## 3. Índice de Pull Requests Mergeados
 | PR | Tema | Estado |
-|---|---|---|
-| **#16** | `contrasteEfectivoDe` (piso 80) + `PISO_IDENTIFICADA = 8.2` + clasificar antes de puntuar | ✅ Mergeado |
-| **#17** | `PISO_IDENTIFICADA = 10` | ✅ Mergeado |
-| **#38** | Modelo `score = f(OCR + completitud)` | ✅ Mergeado |
-| **#39** | Burst | 🟡 **Aprobado, pendiente de merge** |
-| **#43** | F2 (filtros) | 🟡 **Aprobado, pendiente de merge** |
-| **#44** | Guard de borde (original) | ⚠️ Revertido por #47 |
-| **#47** | Revert del guard-borde | 🔴 **Abierto — cerrar ya (30 s)** |
+| :--- | :--- | :--- |
+| #16 | ... | ✅ |
+| #17 | ... | ✅ |
+| #38 | ... | ✅ |
+| #39 | ... | ✅ |
+| #43 | ... | ✅ |
+| #44 | Guard completitud (VIGENTE) | ✅ |
+| #45 | Zoom inline | ✅ |
+| #48 | LOTE 2 preview | ✅ |
+| #49 | LOTE 3 blob-first | ✅ |
+| #50 | Rediseño Stitch | ✅ |
+| #51 | qa-v13 modo rápido | ✅ |
+| #52 | LOTE 4 gracia-enhance | ✅ |
 
-> Detalle y trazabilidad en [[Índice de Pull Requests]].
-
----
-
-## 4. El orden de integración pendiente
-
-```
-v12b  →  rebase v13  →  re-auditoría
-```
-
-- **Decisión abierta:** definir la secuencia de rebases (ver [[Backlog y decisiones pendientes]] B-3).
-- **Plan A:** rebase tras el burst (viva).
-- **Plan B:** condicionada (WebCodecs/WebGPU).
-
-Ambos planes comparten la sonda `__perfProbe` para comparabilidad 1:1 (ver [[Memoria, render y tiers]] §5 y [[Telemetría, diagnóstico y baseline]] §2).
-
----
-
-## 5. Lo desplegado y funcional (alto nivel)
+## 5. Lo desplegado
+- Rediseño Stitch: ✅ integrado en main.
+- LOTE 2 (preview): ✅ integrado.
+- Notificaciones flotantes: ✅ eliminadas (Stitch).
 
 | Subsistema | Estado |
 |---|---|

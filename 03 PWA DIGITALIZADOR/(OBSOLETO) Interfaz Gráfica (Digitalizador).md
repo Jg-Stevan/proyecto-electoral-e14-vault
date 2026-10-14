@@ -1,3 +1,5 @@
+> ⚠️ OBSOLETO desde el rediseño Stitch (PR #50, 2026-10-14). La UI vigente está descrita en [[Flujo de captura (post-Stitch)]]. Se conserva solo como referencia histórica.
+
 ---
 proyecto: Proyecto Electoral E-14
 tipo: producto

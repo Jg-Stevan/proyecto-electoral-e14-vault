@@ -152,4 +152,8 @@ Proporciona canales de intervención inmediata para romper el cuello de botella:
     
       
     
-- **Pie de Página:** Indica que se muestran `5 de 8 consulados con mesas fuera de SLA (>20 min)` y reporta un `Monitor de latencia operacional: 8.8s`.
+- **Pie de Página:** Indica que se muestran `5 de 8 consulados con mesas fuera de SLA (>20 min)` y reporta un `Monitor de latencia operacional: 8.8s`.-e 
+## Puente con la PWA (post-Stitch)
+- Modal de Auditoría ← historial de intentos, rechazos ILEGIBLE/GENERICO/INCOMPLETA/BAJO, score y bandas.
+- Centro de Notificaciones (SLA) ← marcas de tiempo de `EN_REVISION_HUMANA`.
+- Carga Masiva ← contingencia de la PWA deshabilitada de fábrica / reservada.

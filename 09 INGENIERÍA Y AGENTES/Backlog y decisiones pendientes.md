@@ -72,6 +72,7 @@ tags: [ingenieria, backlog, decisiones, pendientes]
 ## 🟡 Contenido y documentación
 
 ### C-1 · Revisar la cuarentena `99 REVISAR`
+- ~~CERRADO~~ → la carpeta no existe en el repo; referencia eliminada en esta pasada de limpieza.
 - `ELECCIONES CONGRESO 2026.md` → **puedes borrarlo** (es otro escenario, confirmado).
 - El resto: ver el `LEEME` de esa carpeta.
 - **Origen:** [[Tablero de próximos pasos]].
@@ -101,6 +102,7 @@ tags: [ingenieria, backlog, decisiones, pendientes]
 ---
 
 ## 🔵 Desarrollo (trabajo de código)
+### DEV-8 · Crear README.md en `apps/digitalizador-e14`
 
 ### DEV-1 · Cerrar PR #47 y limpiar `revert-44`
 - (ver B-1)
@@ -134,6 +136,12 @@ tags: [ingenieria, backlog, decisiones, pendientes]
 ---
 
 ## ✅ Cerradas (historial)
+  - ~~B-1 Cerrar PR #47~~ → nunca se mergeó; guard-borde #44 vigente en main.
+  - ~~B-2 Mergear #39 y #43~~ → mergeados.
+  - ~~B-3 Orden de integración~~ → resuelto de facto por la cadena de merges.
+  - ~~B-4 Rebasar Stitch~~ → mergeado como PR #50 en main (b8cfb01).
+  - ~~DEV-1..DEV-3~~ → ídem.
+  - ~~DEV-4 (v13-post-N)~~ → integrado vía PR #51 (qa-v13 modo rápido).
 
 | Item | Cómo se cerró |
 |---|---|

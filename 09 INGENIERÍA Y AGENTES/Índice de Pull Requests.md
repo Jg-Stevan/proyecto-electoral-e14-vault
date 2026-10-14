@@ -35,18 +35,17 @@ tags: [ingenieria, pull-requests, indice, git]
 
 ---
 
-## 3. PRs aprobados, pendientes de merge 🟡
-
-| PR | Tema | Qué desbloquea | Detalle |
-|---|---|---|---|
-| **#39** | Burst (saga v1→v5, `photoGraceMs = 2000`) | El **LOTE 2** (preview escalonado 2048→4032) | [[Cámara, autocaptura y burst]] §7 |
-| **#43** | F2 (filtros: `processImage` sin re-OCR) | El **LOTE 2** | [[El puente - scanner-core-bridge]] §5 |
-
-> **Acción:** mergear #39 y #43 → desbloquea el LOTE 2 (ver [[Backlog y decisiones pendientes]] B-2).
-
----
-
-## 4. PRs abiertos, requieren acción 🔴
+## 3. PRs mergeados
+| PR | Tema | Estado |
+| :--- | :--- | :--- |
+| #39 | Burst | ✅ |
+| #43 | F2 | ✅ |
+| #45 | Zoom inline | ✅ |
+| #48 | LOTE 2 preview | ✅ |
+| #49 | LOTE 3 blob-first | ✅ |
+| #50 | Rediseño Stitch | ✅ |
+| #51 | qa-v13 modo rápido | ✅ |
+| #52 | LOTE 4 gracia-enhance | ✅ |
 
 | PR | Tema | Estado | Acción |
 |---|---|---|---|
@@ -56,15 +55,10 @@ tags: [ingenieria, pull-requests, indice, git]
 
 ---
 
-## 5. PRs revertidos ⚠️
-
+## 5. PRs revertidos
 | PR | Tema | Qué pasó | Nota |
-|---|---|---|---|
-| **#44** | Guard de borde (original) | Revertido por #47 | El guard sigue vigente en el modelo (ver [[Guard de completitud (borde)]]) |
-
----
-
-## 6. La saga del burst (referencia rápida)
+| :--- | :--- | :--- | :--- |
+| #44 | Guard de borde (original) | VIGENTE en main | [[Guard de completitud (borde)]] |
 
 El burst pasó por 5 versiones; cada una costó un PR y una auditoría:
 
@@ -89,9 +83,8 @@ El burst pasó por 5 versiones; cada una costó un PR y una auditoría:
 
 ---
 
-## 8. Mapa de dependencias (qué desbloquea qué)
-
-```
+## 8. Mapa de dependencias
+*Cadena #48→#49→#50→#51/#52 completada.*
    #47 (cerrar)  ──────────────────────────> limpia revert-44
         │
         ▼
