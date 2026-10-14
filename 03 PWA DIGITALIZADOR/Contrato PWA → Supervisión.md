@@ -30,4 +30,3 @@ tags: [pwa, supervision, contrato, integracion]
 - [ ] Quién asigna SLA.
 - [ ] Visualización del historial por intento.
 
-- Mención adicional: EN_REVISION_HUMANA es clave.

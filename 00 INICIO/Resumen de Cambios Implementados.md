@@ -142,7 +142,8 @@ Bandas: ≥8.0 OPTIMA · 6.5-7.9 ADVERTENCIA · <6.5 RECHAZADA
 
 ---
 
-## 6. Lo que falta (backlog de alto nivel)
+## 6. Lo que falta
+- 🔴 **Definir el contrato de datos PWA → Supervisión** → [[Contrato PWA → Supervisión]]
 
 ### 🔴 Bloqueantes
 - **Cerrar el PR #47** (revert del guard-borde) — 30 segundos, riesgo mayor
