@@ -47,6 +47,7 @@ Si solo vas a leer 3 notas, lee estas:
 1. **`00 INICIO / Introducción al Cerebro Digital`** — cómo usar el vault como segundo cerebro
 2. **`00 INICIO / Resumen de Cambios Implementados`** — qué se construyó y qué cambió
 3. **`09 INGENIERÍA Y AGENTES / Inicio - Ingeniería y Agentes`** — la puerta de entrada a la ingeniería
+4. **[[Contrato PWA → Supervisión]]** — lectura obligada para el siguiente módulo
 
 ---
 
@@ -68,6 +69,7 @@ Si solo vas a leer 3 notas, lee estas:
 - **Repositorio de código:** [web-scanner](https://github.com/Jg-Stevan/web-scanner)
 - **App E-14 desplegada:** [jg-stevan.github.io/web-scanner](https://jg-stevan.github.io/web-scanner/)
 - **Laboratorio:** [jg-stevan.github.io/web-scanner/lab/](https://jg-stevan.github.io/web-scanner/lab/)
+- **Fuente de verdad por-aplicación:** `apps/digitalizador-e14/docs/` (DECISIONS, ROADMAP, SPECs, design)
 
 ---
 
@@ -77,10 +79,4 @@ Proyecto privado de uso interno. El contenido de este vault es documentación de
 
 ---
 
-*Última actualización: 2026-10-13*
-
-## Fuentes
-- Fuente de verdad por-aplicación: `apps/digitalizador-e14/docs/` (DECISIONS, ROADMAP, SPECs, design).
-
-## Documentos maestros
-- [[Contrato PWA → Supervisión]] (lectura obligada para supervisión).
+*Última actualización: 2026-10-14*

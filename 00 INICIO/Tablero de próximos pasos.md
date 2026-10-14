@@ -19,10 +19,10 @@ tags: [pendientes, tablero]
 - [x] ~~Decidir el criterio de calidad~~ → **precedencia + bandas + pisos** ([[Doctrina del score y evaluarGate]])
 - [x] ~~Decidir el hardware objetivo~~ → **tiers adaptativos** ([[Memoria, render y tiers]])
 - [x] ~~Decidir el escenario electoral~~ → **Presidenciales 2026, 2ª vuelta, exterior**
-- [ ] 🔴 **Cerrar el PR #47** (el revert del guard-borde) — 30 segundos, elimina el riesgo mayor
-- [ ] Decidir el merge de **PR #39 (burst)** y **PR #43 (F2)** — ambos aprobados
-- [ ] Decidir el **orden de integración**: v12b → rebase v13 → re-auditoría
-- [ ] **Rebasar el rediseño Stitch** sobre `main` con auditoría E2E
+- [x] ~~🔴 Cerrar el PR #47 (el revert del guard-borde)~~ → nunca se mergeó; guard-borde #44 vigente
+- [x] ~~Decidir el merge de PR #39 (burst) y PR #43 (F2)~~ → mergeados
+- [x] ~~Decidir el orden de integración: v12b → rebase v13 → re-auditoría~~ → resuelto por la cadena de merges
+- [x] ~~Rebasar el rediseño Stitch sobre main con auditoría E2E~~ → mergeado como PR #50 (HEAD b8cfb01)
 - [ ] Decidir qué hacer con el estado muerto **ADVERTENCIA**
 - [ ] Aprobar (o no) el diseño de **§9.12** ("papel completo sin votos")
 
@@ -58,9 +58,9 @@ tags: [pendientes, tablero]
 
 ## 🔵 Desarrollo (el trabajo real)
 
-- [ ] Cerrar el PR #47 y limpiar la rama `revert-44` (o dejarla como evidencia, pero sin PR)
+- [x] ~~Cerrar el PR #47 y limpiar la rama `revert-44`~~ → nunca se mergeó; guard-borde #44 vigente
 - [ ] Mergear **#39** y **#43** → desbloquea el **LOTE 2**
-- [ ] Implementar el **LOTE 2** (preview escalonado 2048→4032)
+- [x] ~~Implementar el LOTE 2 (preview escalonado 2048→4032)~~ → mergeado como PR #48
 - [ ] Decidir sobre **Plan A** (rebase tras el burst) y **Plan B** (condicionada)
 - [ ] Resolver los **35 commits `v13-post-N`** fuera de alcance: QA físico o descartar
 - [ ] Correr los **gates físicos G1-G4** de F2 en el A13

@@ -143,12 +143,10 @@ Bandas: ≥8.0 OPTIMA · 6.5-7.9 ADVERTENCIA · <6.5 RECHAZADA
 ---
 
 ## 6. Lo que falta
-- 🔴 **Definir el contrato de datos PWA → Supervisión** → [[Contrato PWA → Supervisión]]
+
 
 ### 🔴 Bloqueantes
-- **Cerrar el PR #47** (revert del guard-borde) — 30 segundos, riesgo mayor
-- **Mergear #39 (burst) y #43 (F2)** — desbloquea el LOTE 2
-- **Rebasar el rediseño Stitch** sobre `main` con auditoría E2E
+- 🔴 **Definir el contrato de datos PWA → Supervisión** → [[Contrato PWA → Supervisión]]
 
 ### 🟠 Decisiones de producto
 - Resolver el estado `ADVERTENCIA` muerto

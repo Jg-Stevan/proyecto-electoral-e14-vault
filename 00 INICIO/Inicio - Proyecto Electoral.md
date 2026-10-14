@@ -94,12 +94,13 @@ tags: [moc, inicio]
 
 ## ⚠️ Pendientes críticos
 
-- [x] **Contradicciones 1, 2 y 3 RESUELTAS** por la implementación real → [[Contradicciones detectadas]]
-- [x] Escenario confirmado: **Presidenciales 2026, segunda vuelta, exterior** (depto 88 = consulado)
-- [ ] 🔴 **Cerrar el PR #47** (el revert del guard-borde) → [[Backlog y decisiones pendientes]]
-- [ ] Decidir el merge de **#39 (burst)** y **#43 (F2)**, ya aprobados
-- [ ] **Rebasar el rediseño Stitch** sobre `main` con auditoría E2E
-- [ ] Revisar la carpeta de cuarentena y decidir qué se elimina de verdad
+- [x] ~~Contradicciones 1, 2 y 3 RESUELTAS por la implementación real~~ → [[Contradicciones detectadas]]
+- [x] ~~Escenario confirmado: Presidenciales 2026, segunda vuelta, exterior (depto 88 = consulado)~~
+- [x] ~~Cerrar el PR #47~~ → nunca se mergeó; guard-borde #44 vigente ([[Estado del repositorio web-scanner]])
+- [x] ~~Merge #39 y #43~~ → mergeados (desbloquearon LOTE 2 #48)
+- [x] ~~Rebasar Stitch~~ → mergeado como PR #50 (HEAD b8cfb01)
+- [x] ~~Cuarentena 99 REVISAR~~ → la carpeta no existe en el repo; referencias eliminadas
+- [ ] 🔴 **Siguiente frente: módulo de supervisión** → [[Contrato PWA → Supervisión]]
 
 Ver detalle y siguientes pasos en [[Tablero de próximos pasos]].
 

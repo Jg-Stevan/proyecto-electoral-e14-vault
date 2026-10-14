@@ -116,7 +116,7 @@ El panel de supervisión es un **command center**. El operador pasa jornadas ext
 
 ### 4.3 · Estados del acta (PWA)
 - Píldora/badge con color de estado + ícono + texto.
-- Ej: `🟢 VALIDADO ✓`, `🟡 ADVERTENCIA 8/10`, `🔴 RECHAZADO 5/10`.
+- Ej: 🟢 ÓPTIMA 9.2, 🟡 ADVERTENCIA 7.2, 🔴 RECHAZADA 4.8 (bandas ≥8.0 / 6.5–7.9 / <6.5).
 - El score siempre visible en JetBrains Mono.
 
 ### 4.4 · Botones
