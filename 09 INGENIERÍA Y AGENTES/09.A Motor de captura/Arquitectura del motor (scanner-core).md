@@ -2,7 +2,7 @@
 proyecto: Proyecto Electoral E-14
 tipo: ingenieria
 estado: vigente
-actualizado: 2026-10-13
+actualizado: 2026-10-15
 tags: [ingenieria, motor, scanner-core]
 ---
 
@@ -10,22 +10,29 @@ tags: [ingenieria, motor, scanner-core]
 
 > El escáner se construyó **una vez** como motor reutilizable y luego se le pusieron dos caras: el laboratorio y la app electoral.
 
-## 1. El monorepo
+## 1. Dónde vive el motor (post-split 2026-10-15)
+
+El monorepo original se dividió en 2 repos + 1 archivo (ver [[Estado del repositorio web-scanner]]):
 
 ```
-web-scanner/
-├── packages/scanner-core/        # motor HEADLESS (sin UI) — 20 módulos, 6.640 líneas
-├── apps/scanner-lab/             # laboratorio: la app real y banco de pruebas
-└── apps/digitalizador-e14/       # app electoral (actas E-14)
+web-scanner/                    ← github.com/Jg-Stevan/web-scanner
+├── packages/scanner-core/      # motor HEADLESS (sin UI) — 20 módulos
+│     └── se publica como librería npm: @jg-stevan/scanner-core
+└── apps/scanner-lab/           # laboratorio: la app real y banco de pruebas
+
+digielect14/                    ← github.com/Jg-Stevan/digielect14
+└── (app electoral en la raíz)  # consume @jg-stevan/scanner-core@^0.1.0 desde npm
+
+web-scanner-monorepo-viejo/     ← archivo histórico (NO borrar): historia, PRs, tags
 ```
 
-| Paquete | Rol | Detalle |
+| Pieza | Rol | Detalle |
 |---|---|---|
-| `packages/scanner-core` | Motor | Prohibido importar `react`, `next/*`, `@/components`. Contrato congelado vía subpaths |
-| `apps/scanner-lab` | Laboratorio | Dueño de `public/scanner/detection-worker.js` y `public/vendor/opencv-4.5.5*.js`. Aquí se prueba todo primero |
-| `apps/digitalizador-e14` | Producto electoral | Recibe del lab **copiando** subsistemas probados, nunca reinventando |
+| `packages/scanner-core` | Motor | Prohibido importar `react`, `next/*`, `@/components`. Contrato congelado vía subpaths. Se publica con `bun run publish:stage` |
+| `apps/scanner-lab` | Laboratorio | Dueño de `public/scanner/detection-worker.js` y `public/vendor/opencv-4.5.5*.js`. Fuente de verdad (regla de oro #0). Consume el core por workspace (src, transpilePackages) |
+| `digielect14` | Producto electoral | Recibe el MOTOR por versión npm (`^0.1.0`); las mejoras de UI siguen exigiendo copia manual probada en el lab |
 
-**Consecuencia importante:** como el core es **headless**, *ninguna novedad de UI se propaga sola* al e14. **Cada mejora de interfaz exige copia manual.** No es un defecto: es el precio de tener el motor congelado.
+**Cambio de modelo (2026-10-15):** el motor ya no viaja por workspace al producto: se publica a npm y el e14 sube la versión. El flujo de publicación usa staging (`.publish/`) porque ni `bun publish` ni `npm publish` aplican `publishConfig.exports` (pnpm-only).
 
 ## 2. Módulos del core (los que importan)
 

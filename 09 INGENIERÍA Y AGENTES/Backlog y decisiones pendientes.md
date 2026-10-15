@@ -2,7 +2,7 @@
 proyecto: Proyecto Electoral E-14
 tipo: mapa
 estado: vigente
-actualizado: 2026-10-13
+actualizado: 2026-10-15
 tags: [ingenieria, backlog, decisiones, pendientes]
 ---
 
@@ -137,3 +137,18 @@ tags: [ingenieria, backlog, decisiones, pendientes]
 ---
 
 **Ver también:** [[Tablero de próximos pasos]] · [[Contradicciones detectadas]] · [[Inicio - Ingeniería y Agentes]]
+
+---
+
+## 🔵 Infraestructura post-split (2026-10-15)
+
+### I-1 · Reconexión de Vercel Previews
+- **El problema:** el flujo «PR → Vercel Preview → aprobación explícita → merge» (política documentada, PRs #21/#24) quedó conectado al repo archivo: los PRs de los repos nuevos nacen sin preview y el QA físico (iPhone) no tiene entorno.
+- **El plan:** V0 dueño (importar los 2 proyectos en Vercel; web-scanner con Root Directory `apps/scanner-lab`) → V1 agente (`vercel.json` con `deploymentEnabled main:false` — Vercel SOLO previews, Pages única producción) → V2 agente (PR de prueba) → V3 dueño (branch protection).
+- **Nota técnica:** las configs ya son Vercel-safe sin cambios de código (basePath solo con `BUILD_STATIC=1`; `output: standalone` = la «fase B» histórica del worker real).
+
+### I-2 · Limpieza del registro npm
+- `@jg-stevan/scanner-core@0.0.0-stage` (placeholder vacía del publish de prueba): unpublish del dueño dentro de las 72h.
+
+### I-3 · `.env.example` faltante en el nuevo web-scanner
+- La plantilla de env (DATABASE_URL de scaffolding Prisma + ZAI_API_KEY para OCR) quedó en el archivo. Copiar ese 1 archivo.

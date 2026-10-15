@@ -2,7 +2,7 @@
 proyecto: Proyecto Electoral E-14
 tipo: mapa
 estado: vigente
-actualizado: 2026-10-13
+actualizado: 2026-10-15
 tags: [ingenieria, pull-requests, indice, git]
 ---
 
@@ -22,6 +22,23 @@ tags: [ingenieria, pull-requests, indice, git]
 | 🔴 | Abierto, requiere acción |
 | ❌ | Cerrado sin merge / revertido |
 | ⚠️ | Revertido por otro PR |
+
+---
+
+## 1.bis. Cierre del monorepo (2026-10-15)
+
+El monorepo original se dividió en 2 repos (ver [[Estado del repositorio web-scanner]]). Últimos PRs del monorepo:
+
+| PR | Tema | Estado |
+|---|---|---|
+| #60 | Empaquetado npm del core (build a dist/ + publishConfig) | ✅ |
+| #61 | Flujo de publicación por staging (`.publish/` — publishConfig.exports es pnpm-only) | ✅ |
+| #59 | Preparación de la publicación v1 del core (rama `chore/publicacion-v1`) | ✅ |
+| #58 | LOTE 5.5 — editor de alta calidad (rama `perf/lote5-5-editor-alta-calidad`) | ✅ |
+
+PRs #59 y #58 reconstruidos desde `git log --merges --format="%h %s" -15` del archivo [web-scanner-monorepo-viejo](https://github.com/Jg-Stevan/web-scanner-monorepo-viejo). **PRs #53–#57 OMITIDOS**: no aparecen como merge commits en ese log y su tema no es verificable — nada inventado.
+
+**Nueva era:** desde el split cada repo lleva numeración de PRs propia desde #1. Los PRs nuevos se documentan por repo; este índice consolida el historial del monorepo.
 
 ---
 

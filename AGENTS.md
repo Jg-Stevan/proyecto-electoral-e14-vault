@@ -6,7 +6,7 @@
 
 - Es el **cerebro digital** del proyecto: un vault de Obsidian con el conocimiento del proyecto electoral E-14 (digitalización, transmisión y auditoría de actas E-14 en consulados del exterior).
 - **No contiene código de la aplicación.** Contiene el modelo mental: contexto electoral, arquitectura, requisitos, productos, diseño e ingeniería real.
-- El **código real** vive en [github.com/Jg-Stevan/web-scanner](https://github.com/Jg-Stevan/web-scanner) (monorepo: `packages/scanner-core` + `apps/scanner-lab` + `apps/digitalizador-e14`).
+- El **código real** vive en 2 repos: [github.com/Jg-Stevan/web-scanner](https://github.com/Jg-Stevan/web-scanner) (motor `packages/scanner-core` → npm `@jg-stevan/scanner-core` + laboratorio `apps/scanner-lab`) y [github.com/Jg-Stevan/digielect14](https://github.com/Jg-Stevan/digielect14) (app electoral, consume el motor desde npm). El monorepo original, con la historia completa (PRs, tags, ramas), quedó archivado en [github.com/Jg-Stevan/web-scanner-monorepo-viejo](https://github.com/Jg-Stevan/web-scanner-monorepo-viejo) — NO borrar.
 
 ## 2. Orden de lectura obligatorio
 

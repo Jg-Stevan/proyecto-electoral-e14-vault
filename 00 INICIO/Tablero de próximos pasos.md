@@ -2,7 +2,7 @@
 proyecto: Proyecto Electoral E-14
 tipo: mapa
 estado: vigente
-actualizado: 2026-10-13
+actualizado: 2026-10-15
 tags: [pendientes, tablero]
 ---
 
@@ -86,3 +86,15 @@ tags: [pendientes, tablero]
 - [ ] Un "panel de mando" del proyecto hecho con **Canvas**
 - [ ] Exportar el ERS a PDF/DOCX para compartir con quien no use Obsidian
 - [ ] Unificar los dos mundos: **una nota de "estado del sistema"** que junte motor + aprobación en un solo diagrama
+
+---
+
+## 🔵 Infraestructura post-split (2026-10-15) — pendientes del dueño
+
+- [x] ~~Separar el monorepo en repos~~ → **HECHO**: web-scanner (`a9b6b83`) + digielect14 (`fbac5de`), CI 4/4 verde, demos vivas ([[Estado del repositorio web-scanner]])
+- [x] ~~Publicar el motor como librería~~ → **HECHO**: `@jg-stevan/scanner-core@0.1.0` en npm, verificada por un consumidor externo
+- [ ] `bunx npm unpublish @jg-stevan/scanner-core@0.0.0-stage` (placeholder vacía del publish de prueba — dentro de las 72h)
+- [ ] Cierre del archivo `web-scanner-monorepo-viejo`: Settings → Pages → None + **Archive this repository**
+- [ ] Copiar `.env.example` de `apps/scanner-lab` al nuevo web-scanner (quedó en el archivo)
+- [ ] Reconectar Vercel Previews (Vercel SOLO previews de PR; Pages = única producción)
+- [ ] Branch protection en ambos repos: require PR + check `Quality Gate` + block force push
