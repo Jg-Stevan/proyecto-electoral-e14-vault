@@ -59,7 +59,7 @@ tags: [pendientes, tablero]
 ## 🔵 Desarrollo (el trabajo real)
 
 - [x] ~~Cerrar el PR #47 y limpiar la rama `revert-44`~~ → nunca se mergeó; guard-borde #44 vigente
-- [ ] Mergear **#39** y **#43** → desbloquea el **LOTE 2**
+- [x] ~~Mergear **#39** y **#43**~~ → mergeados (desbloquearon LOTE 2 #48)
 - [x] ~~Implementar el LOTE 2 (preview escalonado 2048→4032)~~ → mergeado como PR #48
 - [ ] Decidir sobre **Plan A** (rebase tras el burst) y **Plan B** (condicionada)
 - [ ] Resolver los **35 commits `v13-post-N`** fuera de alcance: QA físico o descartar

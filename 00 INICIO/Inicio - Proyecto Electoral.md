@@ -94,8 +94,8 @@ tags: [moc, inicio]
 
 ## ⚠️ Pendientes críticos
 
-- [x] ~~Contradicciones 1, 2 y 3 RESUELTAS por la implementación real~~ → [[Contradicciones detectadas]]
-- [x] ~~Escenario confirmado: Presidenciales 2026, segunda vuelta, exterior (depto 88 = consulado)~~
+- [x] Contradicciones 1, 2 y 3 RESUELTAS por la implementación real → [[Contradicciones detectadas]]
+- [x] Escenario confirmado: Presidenciales 2026, segunda vuelta, exterior (depto 88 = consulado)
 - [x] ~~Cerrar el PR #47~~ → nunca se mergeó; guard-borde #44 vigente ([[Estado del repositorio web-scanner]])
 - [x] ~~Merge #39 y #43~~ → mergeados (desbloquearon LOTE 2 #48)
 - [x] ~~Rebasar Stitch~~ → mergeado como PR #50 (HEAD b8cfb01)

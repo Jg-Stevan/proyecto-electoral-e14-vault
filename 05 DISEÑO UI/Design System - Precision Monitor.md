@@ -160,7 +160,7 @@ Las pantallas de revisión usan **paneles de color semántico**:
 
 | Pantalla | Panel | Acción principal |
 |---|---|---|
-| **Envío automático** (≥9/10) | 🟢 Verde: "VALIDADO Y ENVIADO" | "SEGUIR ESCANEANDO" |
+| **Envío automático** (≥8.0) | 🟢 Verde: "VALIDADO Y ENVIADO" | "SEGUIR ESCANEANDO" |
 | **Con advertencia** (8/10) | 🟡 Naranja: "ADVERTENCIA: ESQUINAS RECORTADAS" | "REPETIR FOTO (RECOMENDADO)" + "ENVIAR CON ADVERTENCIA" |
 | **Rechazada** (5/10) | 🔴 Rojo: "ERROR CRÍTICO: ILEGIBLE" | "OBLIGATORIO REPETIR FOTO" (única acción) |
 
